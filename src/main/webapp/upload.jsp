@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hello
-<form action ="getAlien">
-<input type="text" name="aid">
 
-<input type="submit"></form>
+<form action="upload" method="post">
 
+    <input type="file" name="file" multiple="multiple">
+    <input type = "submit">
+</form>
 
 </body>
 </html>
