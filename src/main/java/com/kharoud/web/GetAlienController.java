@@ -22,9 +22,10 @@ public class GetAlienController extends HttpServlet {
 		int aid = Integer.parseInt(request.getParameter("aid"));
 		
 		AlienDao dao = new AlienDao();
-		
-		
 		Alien a1 = dao.getAlien(aid);
+		
+		
+		request.setAttribute("a", a1);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("showAlien.jsp");
 		rd.forward(request, response);

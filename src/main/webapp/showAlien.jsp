@@ -1,3 +1,4 @@
+<%@page import="com.kharoud.web.model.*" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -7,7 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body bgcolor="cyan">
-
-in show
+hello
+<%
+   Alien a1 = (Alien)request.getAttribute("a");
+ out.print(a1);
+%>
 </body>
 </html>
