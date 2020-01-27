@@ -10,7 +10,7 @@
 <body bgcolor="cyan">
 hello
 <%
-   Alien a1 = (Alien)request.getAttribute("a");
+   Alien a1 = (Alien)session.getAttribute("a");
  out.print(a1);
 %>
 </body>
